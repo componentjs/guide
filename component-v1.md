@@ -9,12 +9,13 @@ The goals of this release are:
 - prune `component(1)` of options and features
 - make creating components easier
 
-The next version, `v1.1.0`, will focus on making apps with components easier.
+The next version, `v1.1.0`, will focus on making apps with components easier with commands like `watch` and `link`.
 
 Please note that `component(1)` is designed for building small, public components,
 as well as building apps that do not need a custom build process.
 If you need to use plugins or process your builds,
 you should use the JS API instead.
+We don't want to bloat `component(1)` with options, commands, and features.
 
 ## What's New
 
@@ -23,6 +24,7 @@ you should use the JS API instead.
 For a while, Component users were plagued by a lack of semantic versioning support.
 But fear no longer! Component now supports semver.
 This also means that Component supports multiple versions of a dependency in a single build __and__ app.
+You'll notice that components are now installed as `<user>/<repo>/<version>` instead of `<user>-<repo>`.
 
 Please use `^` semver ranges in your public components.
 Since we're dealing with frontend development, we want as few duplicates as possible.
@@ -104,7 +106,7 @@ you should use the JS API instead.
 ## Other Changes
 
 The `component.json` [specifications](https://github.com/component/spec) have changed over time.
-Any relevant changes will be warned to you when using `component(1)` using [component-validator](https://github.com/component/validator.js).
+`component(1)` will warn you of any changes.
 
 The internals of `component(1)` have also changed drastically.
 Be sure to understand the following internal modules if you wish to use the more powerful JS API:
