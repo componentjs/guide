@@ -1,4 +1,3 @@
-
 # Component v1.0.0
 
 Component has finally received the developer love it needed for a long time!
@@ -13,7 +12,7 @@ The next version, `v1.1.0`, will focus on making apps with components easier wit
 
 Please note that `component(1)` is designed for building small, public components,
 as well as building apps that do not need a custom build process.
-If you need to use plugins or process your builds,
+If you need to use plugins for your builds,
 you should use the JS API instead.
 We don't want to bloat `component(1)` with options, commands, and features.
 
@@ -26,14 +25,16 @@ But fear no longer! Component now supports semver.
 This also means that Component supports multiple versions of a dependency in a single build __and__ app.
 You'll notice that components are now installed as `<user>/<repo>/<version>` instead of `<user>-<repo>`.
 
-Please use `^` semver ranges in your public components.
+Please use semver ranges in your public components.
+You'll notice when you `component install <user>/<repo>`, 
+components will now be installed with a `^` if `> v1.0.0` and `~` otherwise.
 Since we're dealing with frontend development, we want as few duplicates as possible.
 But please, stop using `*`!
 
 ### Pinning and Updating
 
 Although semantic versioning is great, you still want to pin your app's dependencies to specific versions.
-Otherwise, something might break your app, and hunting the cause might be nontrivial.
+Otherwise, a dependency might break your app and hunting the cause might be nontrivial.
 So Component has added a few commands to make pinning dependencies and updating them easier.
 
 - `component pin` - pin all your dependencies that users semver ranges to a single version.
@@ -60,6 +61,7 @@ Users can now search for your component using `component search` or at http://co
 Component v1 now supports ES6 modules by default.
 Simply write an ES6 module with node-like module references, and your app should still work.
 Note that CommonJS and ES6 modules are not completely compatible, so you may run into compatibility issues.
+However, please let us know if you find any issues!
 
 ### Smarter Require()s
 
@@ -92,6 +94,7 @@ Feel free to add more [remotes](https://github.com/component/remotes.js)!
 Some commands have been removed as they were deemed unnecessary.
 These commands are:
 
+- `component create` - has moved to https://github.com/component/create.js
 - `component convert`
 - `component wiki`
 - `component info`
