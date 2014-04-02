@@ -88,6 +88,11 @@ Alas, now you can simply do `"js": ["**/*.js"]`!
 Keep in mind that this will slow down your build process,
 so only use globs when necessary.
 
+### Easier Local Components
+
+Creating local components is now easier! For one, you can just use globs instead of listing every single file.
+But most of all, you don't have to name each local's `component.json`. Component will just use its containing folder's name.
+
 ## What's Removed
 
 ### Custom Remotes
