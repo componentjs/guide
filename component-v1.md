@@ -16,6 +16,8 @@ If you need to use plugins for your builds,
 you should use the JS API instead.
 We don't want to bloat `component(1)` with options, commands, and features.
 
+For more specific changes, please read the [History.md](https://github.com/component/component/blob/master/History.md).
+
 ## What's New
 
 ### Semantic Versioning
