@@ -20,6 +20,14 @@ For more specific changes, please read the [History.md](https://github.com/compo
 
 ## What's New
 
+### Github Authentication
+
+Component now requires GitHub authentication to resolve semantic versions.
+If you do not authenticate your requests with GitHub, 
+you will quickly reach the 60 requests per hour limit.
+To authenticate, simply either use a [netrc](http://www.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-File.html) file
+or add the `GITHUB_USERNAME` and `GITHUB_PASSWORD` environmental variables.
+
 ### Semantic Versioning
 
 For a while, Component users were plagued by a lack of semantic versioning support.
