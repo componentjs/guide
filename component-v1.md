@@ -104,13 +104,21 @@ Feel free to add more [remotes](https://github.com/component/remotes.js)!
 Some commands have been removed as they were deemed unnecessary.
 These commands are:
 
-- `component create` - has moved to https://github.com/component/create.js
-- `component convert`
-- `component wiki`
-- `component info`
-- `component changes`
+- `component create` - has moved to https://github.com/component/create.js. It may be re-added at a later date after improvements are made.
+- `component convert` - no longer necessary as Component now supports JSON and HTML strings.
+- `component wiki` - the official "registry" has moved from the wiki to the crawler as stated above
 
-### build --use
+`component info` and `component changes` were used to get info about a specific component. However, there were many issues with this, such as some components not having a changelog and others having a changelog name with different casing. Thus, it has been replaced with `component open`, which just opens the component's GitHub page. This is not bound to fail, and is overall more user-friendly.
+
+### component install --force
+
+Force was terribly broken, and was mainly required due to the old installer's inability to handle bad installs.
+The new installer now handles failed installations correctly (only successful installations are actually saved).
+
+If you need to remove or uninstall a component, you can run `rm -rf components` or `rm -rf components/<user>/<repo>`. 
+A CLI utility to do those two commands wouldn't be very useful.
+
+### component build --use
 
 Support for using plugins from `component(1)` has been removed.
 If you need to use a builder plugin,
