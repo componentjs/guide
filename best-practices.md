@@ -44,3 +44,7 @@ they are not versioned by component.
 If instead you move them to a separate repository and add them as dependencies,
 they will be versioned by the builder.
 
+## Only use lowercased letters in files and component names
+
+Some file systems are case sensitive, others are not.
+Let's keep components as compatible as possible!
