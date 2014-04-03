@@ -18,6 +18,9 @@ We don't want to bloat `component(1)` with options, commands, and features.
 
 For more specific changes, please read the [History.md](https://github.com/component/component/blob/master/History.md).
 
+_Please note that the changes described below will be included in the 1.0.0 release, but some may not be 
+implemented yet in the release candidates.   2 April 2014_
+
 ## What's New
 
 ### Github Authentication
@@ -73,7 +76,7 @@ Simply write an ES6 module with node-like module references, and your app should
 Note that CommonJS and ES6 modules are not completely compatible, so you may run into compatibility issues.
 However, please let us know if you find any issues!
 
-### Smarter Require()s
+### Smarter `require()`s
 
 Not all the maintainers of the [component](https://github.com/component) organization use Component - many use `npm` and `browserify`.
 However, this has been a pain as components are generally named with `npm`'s namespace in mind.
@@ -83,8 +86,8 @@ No more aliasing hackery will be required on the `browserify` and `node` side.
 
 ### Glob Support
 
-Many people complained about having to listen every single file in a `component.json` manually.
-Alas, now you can simply do `"js": ["**/*.js"]`!
+Many people complained about having to list every single file in a `component.json` manually.
+Now you can simply do `"js": ["**/*.js"]`!
 Keep in mind that this will slow down your build process,
 so only use globs when necessary.
 
@@ -121,7 +124,7 @@ Force was terribly broken, and was mainly required due to the old installer's in
 The new installer now handles failed installations correctly (only successful installations are actually saved).
 
 If you need to remove or uninstall a component, you can run `rm -rf components` or `rm -rf components/<user>/<repo>`. 
-A CLI utility to do those two commands wouldn't be very useful.
+A CLI utility to do those two simple commands wouldn't be very useful.
 
 ### component build --use
 
