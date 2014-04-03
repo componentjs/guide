@@ -40,6 +40,16 @@ Guide to Creating Apps with Components:
 - [CSS Ordering](creating-apps-with-components/css-ordering.md)
 - [Best Practices](creating-apps-with-components/best-practices.md)
 
+## Screencasts
+
+- [Creating web components](https://vimeo.com/53730178)
+- [App integration introduction](https://vimeo.com/48054442)
+
+## Articles
+
+- building a [date picker component](http://tjholowaychuk.tumblr.com/post/37832588021/building-a-date-picker-component)
+- original [component blog post](http://tjholowaychuk.tumblr.com/post/27984551477/components)
+
 ## Official Links
 
 - [Component(1)](https://github.com/component/component)
