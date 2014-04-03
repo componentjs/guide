@@ -6,23 +6,44 @@ Have questions about [component][component]? Open up an issue.
 Created a screencast or blog post about [component][component]? Link it here.
 Feel free to open a PRs with edits! Please be concise!
 
-## To do
+## Changelogs
 
-Merge from [wiki](https://github.com/component/component/wiki/_pages):
+- [v1.0.0](changelogs/1.0.0.md)
 
-- F.A.Q.
-- Examples
-- Articles
-- Screencasts
-- Getting Started
-- Component and npm
+You can always view the boring [history.md](https://github.com/component/component/blob/master/History.md).
 
-## Official Links
+## Community
 
-- [Specifications](https://github.com/component/spec)
 - [Mailing List](https://groups.google.com/group/componentjs)
 - [Google+ Community](https://plus.google.com/u/0/communities/109771441994395167277)
 - join `#components` on freenode
 - follow [@component_js](http://twitter.com/component_js) on twitter
+
+## Table of Contents
+
+`component(1)`:
+
+- [Getting Started](component/getting-started.md)
+- [Component vs.](component/vs.md) - Component use-cases and comparison with other frontend solutions
+- [FAQ](component/faq.md)
+- [Examples](component/examples.md)
+- [Repositories](component/repositories.md) - all the official repositories used to create `component(1)`
+- [Troubleshooting](component/troubleshooting.md)
+
+Guide to Creating Components:
+
+- [Best Practices](creating-components/best-practices.md)
+
+Guide to Creating Apps with Components:
+
+- [Entry Points](creating-apps-with-components/entry-points.md)
+- [CSS Ordering](creating-apps-with-components/css-ordering.md)
+- [Best Practices](creating-apps-with-components/best-practices.md)
+
+## Official Links
+
+- [Component(1)](https://github.com/component/component)
+- [Guide](https://github.com/component/guide)
+- [Specifications](https://github.com/component/spec)
 
 [component]: https://github.com/component/component
