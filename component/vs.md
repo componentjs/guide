@@ -26,6 +26,9 @@ Some benefits include:
 - No publishing step except for pushing takes to your repository
 - No different username than GitHub usernames
 - Flat dependencies, which is more suitable for the browser
+- Allow multiple versions of the same dependencies
+- Faster installations
+- No caching of installations, avoiding any `cache clean` issues
 
 ## Component vs. Browserify
 
@@ -42,6 +45,10 @@ Bower is more similar to `npm` than to Component. Like `npm`, Bower's `bower.jso
 However, the major difference between Bower and Component is that `component.json`s are more strict and opinionated: all files listed in the `component.json` are __assumed to be mandatory__. On the other hand, files listed in a `bower.json` are generally optional.
 
 A strict manifest specification allows Component to easily integrate a build process. However, this is impossible with Bower as people publish different types of modules (globals, plugins, AMD, and CommonJS), as well as optional files as shown in this [react-bower issue](https://github.com/reactjs/react-bower/issues/1), making an integrated build process very difficult.
+
+Component's integrated build system allows you to simply include one script and one stylesheet in your page. There's no juggling `<script src="bower_components/jquery"><script>` calls and such.
+
+Like `npm`, `bower` is slower than Component at installing, has an unnecessary publish step, does not support multiple versions of dependencies, and does not cache installations.
 
 ## Component vs. RequireJS
 

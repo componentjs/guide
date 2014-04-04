@@ -1,4 +1,21 @@
 
+# Try to avoid more than one path
+
+Try to keep all your components in a single path unless the number of components you use in that single path is unmanageable.
+
+If you do start using multiple paths, you should not use `locals` not within a path above the current path. For example, suppose you have the following structure:
+
+```js
+view/
+  user/component.json
+  page/component.json
+model/
+  user/component.json
+  page/component.json
+```
+
+From `view/user`, you should NOT do `require('user')`. You should either do `require('model').user`, `require('model/user')`, or prefix every component in `model/` with `model-` and do `require('model-user')`.
+
 # Pin dependencies
 
 Dependency updates may break your app. As a safeguard against this, you should pin your dependencies with `component pin`. Then, once in a while, run `component-update` and test your app to make sure it works with the newest versions of dependencies.
