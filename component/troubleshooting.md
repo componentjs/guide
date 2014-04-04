@@ -1,4 +1,3 @@
-
 If you're running into issues with Component, the first step you should do is run `component validate`. This will validate your `component.json` files and tell you if there are any major issues with your `component.json`.
 
 The next step is to use the `DEBUG` environmental variable. [Read more about how DEBUG works](https://github.com/visionmedia/debug). For a quick debug statement, run your command prefixed with `DEBUG=component*`. For example, this debugs a `component update` command:
@@ -22,4 +21,19 @@ $ DEBUG=component* component update
   component-resolver finished installing dependencies +0ms
       update : updating asdf's pinned dependencies
       update : updated asdf's ranged dependencies in 743ms
+```
+
+You may also be interested in `DEBUG=remotes*` for when dependencies don't install. Here's an example:
+
+```bash
+$ DEBUG=remotes* component install es-shims/es5-shim@v2.3.0
+  remotes:local checking local components at /Users/jong/Workspace/test/components +0ms
+  remotes:local resolving local remote +11ms
+  remotes:local checking folder: /Users/jong/Workspace/test/components/es-shims/es5-shim +1ms
+  remotes:github GET "https://raw.githubusercontent.com/es-shims/es5-shim/v2.3.0/component.json" +0ms
+  remotes:github GET "https://raw.github.com/es-shims/es5-shim/v2.3.0/component.json" +352ms
+  remotes:github GET "https://raw.githubusercontent.com/es-shims/es5-shim/v2.3.0/component.json" +284ms
+  remotes:github GET "https://raw.github.com/es-shims/es5-shim/v2.3.0/component.json" +124ms
+
+       error : Error: no remote found for dependency "es-shims/es5-shim@v2.3.0".
 ```
