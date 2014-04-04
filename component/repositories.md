@@ -18,6 +18,7 @@ Libraries synonymous to Component(1) commands:
 - [component-pin](https://github.com/component/pin.js)
 - [component-update](https://github.com/component/update.js)
 - [component-validator](https://github.com/component/validator.js)
+- [component-watcher](https://github.com/component/watcher.js)
 
 Other JS libraries:
 
