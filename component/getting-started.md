@@ -1,7 +1,6 @@
-
 ## Install Component
 
-First, you need to install `node.js` v0.10+. If you don't have it installed, visit [node's download page]([node's download page](http://nodejs.org/download/).
+First, you need to install `node.js` v0.10+. If you don't have it installed, visit [node's download page](http://nodejs.org/download/).
 
 Once installed, install Component by running the following command:
 
@@ -23,8 +22,8 @@ Let's quickly create a basic static site. First, create an `index.html`:
   <body>
     <h1>Getting Started with Component</h1>
     <p>Woo!</p>
+    <script src="build/build.js"></script>
   </body>
-  <script src="build/build.js"></script>
 </html>
 ```
 
