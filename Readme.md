@@ -49,6 +49,7 @@ Guide to Creating Apps with Components:
 
 - building a [date picker component](http://tjholowaychuk.tumblr.com/post/37832588021/building-a-date-picker-component)
 - original [component blog post](http://tjholowaychuk.tumblr.com/post/27984551477/components)
+- [build a Web app](http://blog.kewah.com/2014/build-a-web-app-with-component/) with component
 
 ## Official Links
 
