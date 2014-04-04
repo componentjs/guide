@@ -3,13 +3,13 @@ Component(1) is split into many repositories. This makes maintenance much easier
 
 Note that these are only the official libraries.
 
-The major libraries you may be interested in are:
+### The major libraries you may be interested in are:
 
 - [remotes](https://github.com/component/remotes.js) - unify remote endpoint APIs
 - [component-resolver](https://github.com/component/resolver.js) - resolve the dependency tree with optional installing
 - [component-builder](https://github.com/component/builder2.js) - the build system
 
-Libraries synonymous to Component(1) commands:
+### Libraries synonymous to Component(1) commands:
 
 - [component-build](https://github.com/component/build.js)
 - [component-create](https://github.com/component/create.js)
@@ -20,7 +20,7 @@ Libraries synonymous to Component(1) commands:
 - [component-validator](https://github.com/component/validator.js)
 - [component-watcher](https://github.com/component/watcher.js)
 
-Other JS libraries:
+### Other JS libraries:
 
 - [component-bundler](https://github.com/component/bundler.js)
 - [component-consoler](https://github.com/component/console.js)
@@ -30,7 +30,7 @@ Other JS libraries:
 - [component-manifest](https://github.com/component/manifest.js)
 - [component-require2](https://github.com/component/require2) - Component's `require()` implementation
 
-Builder Plugins:
+### Builder Plugins:
 
 - [builder-autoprefixer](https://github.com/component/builder-autoprefixer)
 - [builder-coffee-script](https://github.com/component/builder-coffee)
@@ -39,12 +39,12 @@ Builder Plugins:
 - [builder-jade](https://github.com/component/builder-jade)
 - [builder-regenerator](https://github.com/component/builder-regenerator)
 
-Middleware:
+### Middleware:
 
 - [component-koa](https://github.com/component/koa.js) - middleware for [koa](https://github.com/koajs/koa)
 - [component-middleware](https://github.com/component/middleware.js) - middleware for node, connect, express, etc.
 
-Documentation:
+### Documentation:
 
 - [guide](https://github.com/component/guide)
 - [specifications](https://github.com/component/spec)
