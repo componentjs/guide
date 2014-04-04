@@ -23,7 +23,7 @@ $ DEBUG=component* component update
       update : updated asdf's ranged dependencies in 743ms
 ```
 
-You may also be interested in `DEBUG=remotes*` for when dependencies don't install. Here's an example:
+You may also be interested in `DEBUG=remotes*` for when dependencies don't install, specifically those `error : Error: no remote found for dependency "es-shims/es5-shim@v2.3.0".` messages. This means that a `component.json` could not be found for the version you've specified. Here's an example on debugging:
 
 ```bash
 $ DEBUG=remotes* component install es-shims/es5-shim@v2.3.0
@@ -37,3 +37,6 @@ $ DEBUG=remotes* component install es-shims/es5-shim@v2.3.0
 
        error : Error: no remote found for dependency "es-shims/es5-shim@v2.3.0".
 ```
+
+This shows you which URLs were tried, and since no remote was found, all of these URLs 404'd.
+
