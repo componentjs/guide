@@ -1,3 +1,6 @@
+
+> Please note that this FAQ is a little out of date and was written before 1.0.0.
+
 ## Why components?
 
   Client-side development currently suffers from a lack of structure, more importantly this lack of structure and fundamental sharing of assets makes it difficult to abstract libraries into smaller subsets. Normally you would think twice about separating your library into several parts, because telling end-users to install several pieces is tedious, error-prone, and frankly annoying. Component makes this extremely easy, and we may all benefit from creating smaller lego-blocks for the web.
