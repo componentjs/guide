@@ -29,6 +29,7 @@ Some benefits include:
 - Allow multiple versions of the same dependencies
 - Faster installations
 - No caching of installations, avoiding any `cache clean` issues
+- No "unmet dependency" error messages
 
 ## Component vs. Browserify
 
