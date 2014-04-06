@@ -18,7 +18,9 @@ All crawled repositories will be discoverable through http://component.io as wel
 However, there are rules to being crawled:
 
 - A `component.json` must exist in the default branch
+- The `component.json` must not have `private: true`
 - GitHub issues __must__ be enabled
+- The repository must not be bare or empty
 
 ## Best Practices
 
