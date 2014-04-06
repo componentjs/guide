@@ -1,6 +1,14 @@
 
 Component is one of many frontend solutions. One of the major differences between Component and other solutions is that it is vertically integrated, meaning it does everything from package management to building. Of course, to do so, it is opinionated and is not suitable for every workflow.
 
+## What is the long-term goal of Component?
+
+Component is currently a stopgap for ES6 modules and Web Components.
+When all modern browsers start supporting these features,
+Component will begin focusing more on semantic versioning and server-side bundling as browsers would be able to handle the rest.
+
+However, we may still use `component.json` as it allows package managers to accurately describe the package and how to consume it without parsing the files of the package.
+
 ## When is Component right for me?
 
 Component's philosophy is the UNIX philosophy of the web - to create a platform for small, reusable components that consist of JS, CSS, HTML, images, fonts, etc. With it's well-defined specs, using Component means not worrying about most frontend problems such as package management, publishing components to a registry, or creating a custom build process for every single app.
