@@ -1,5 +1,7 @@
 
-# Installing Component
+# Getting Started: The Basics
+
+## Installing Component
 
 First, you need to install `node.js` v0.10+. If you don't have it installed,
 visit [node's download page](http://nodejs.org/download/).
@@ -10,13 +12,13 @@ Once installed, install Component from npm by running the following command:
 $ npm install -g component
 ```
 
-# Using Component
+## Using Component
 
 The following is a quick introduction to Component through building a simple
 static site.  It demonstrates the basic use of component for compiling local
 javascript and css files and remote css files.
 
-## Create index.html
+### Create index.html
 
 First, create an `index.html`:
 
@@ -38,7 +40,7 @@ First, create an `index.html`:
 You'll notice that we've linked to `build/build.css` and `build/build.js`
 files. This is where Component will build files to.
 
-## Create component.json
+### Create component.json
 
 Let's create the `component.json`. We want to automatically include
 [normalize.css](https://github.com/necolas/normalize.css), so our
@@ -54,11 +56,11 @@ Let's create the `component.json`. We want to automatically include
 ```
 
 We use `necolas/normalize.css` because that's where the code is hosted
-on GitHub.[1][#remotes] `^3.0.0` means that we want to use any version of
-`normalize.css` between `3.0.0` and below `4.0.0`.[2][#semver]
+on GitHub.[[1]](#remotes) `^3.0.0` means that we want to use any version of
+`normalize.css` between `3.0.0` and below `4.0.0`.[[2]](#semver)
 
 
-## Create index.css
+### Create index.css
 
 Now, let's create a CSS file `index.css`. Let's reset the box model, to start:
 
@@ -68,7 +70,7 @@ Now, let's create a CSS file `index.css`. Let's reset the box model, to start:
 }
 ```
 
-## Create index.js
+### Create index.js
 
 Now, let's create a JS file `index.js` that flashes the `Woo!` in the document.
 
@@ -82,7 +84,7 @@ setInterval(function () {
 }, 300);
 ```
 
-## Add index.js and index.css to component.json
+### Add index.js and index.css to component.json
 
 We need to add our files to the `component.json`, so it will end up looking 
 like this:
@@ -98,7 +100,7 @@ like this:
 }
 ```
 
-## `component build`
+### `component build`
 
 Now, we run `component build`. You'll see an output like this:
 
@@ -114,7 +116,7 @@ $ component build
 You'll see `build/build.js` and `build/build.css` files as referenced by 
 `index.html`.
 
-## Open index.html
+### Open index.html
 
 Run `open index.html`. Now you'll notice that `Woo!` is flashing: the
 site is built.
@@ -137,12 +139,14 @@ and `-moz`. Component uses autoprefixer by default to generate vendor prefixes.
 
 
 -----
+**Notes:**
+
 <a name="remotes"></a>
-Component uses GitHub repos by default, but can be configured to use other
+[1] Component uses GitHub repos by default, but can be configured to use other
 _remotes_ via custom adapters. See [component/remotes.js][remotes] for details.
 
 <a name="semver"></a>
-Component uses npm's semantic version string parser ([node-semver][semver]).
+[2] Component uses npm's semantic version string parser ([node-semver][semver]).
 
 
 [css-ordering]: https://github.com/component/guide/blob/master/creating-apps-with-components/css-ordering.md
