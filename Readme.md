@@ -32,6 +32,8 @@ You can always view the boring [history.md](https://github.com/component/compone
 
 Guide to Creating Components:
 
+- [Publishing Components](creating-components/publishing.md)
+- [Standalone UMD Builds](creating-components/standalone-umd-builds.md)
 - [Best Practices](creating-components/best-practices.md)
 
 Guide to Creating Apps with Components:
