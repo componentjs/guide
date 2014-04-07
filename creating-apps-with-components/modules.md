@@ -1,4 +1,3 @@
-
 # Modules
 
 The Philosophy of Component is to create small self contained modules that do one thing very well. In the land of Javascript there is no such thing as a module system yet. Because of that, Component has it's own module system based on the [commonjs]() spec. If you have programmed with node before this should sound very familiar. If you haven't, check out this great [Introduction]() where you learn all about it. As of ECMAScript 6, a module system is baked right into the language. Event though commonjs modules are great we want to move forward and support the official module spec. The Browser support for ES6 Modules isn't wide enough to use it in production but Component has a solution to use ES6 modules Today! Let's take a look how we do it:
@@ -19,7 +18,7 @@ As the ES6 spec finalizes we can remove this additional build step but it'll be 
 
 ## Compatibility with existing components
 
-### commonjs => ES6
+### commonjs ► ES6
 Components that are based on commonjs can be imported via ES6 modules.
 
 _a.js:_
@@ -37,7 +36,7 @@ add(3, 5)
 // => 8
 ```
 
-### ES6 => commonjs
+### ES6 ► commonjs
 Components that are based on ES6 modules can be imported via commonjs.
 
 _a.js:_
