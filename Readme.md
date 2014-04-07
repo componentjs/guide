@@ -46,12 +46,16 @@ Guide to Creating Apps with Components:
 
 - [Creating web components](https://vimeo.com/53730178)
 - [App integration introduction](https://vimeo.com/48054442)
+- [Introduction to Component](https://vimeo.com/86336598)
+- [Component Part 2: Making Your Own](https://vimeo.com/86339228)
 
 ## Articles
 
 - building a [date picker component](http://tjholowaychuk.tumblr.com/post/37832588021/building-a-date-picker-component)
 - original [component blog post](http://tjholowaychuk.tumblr.com/post/27984551477/components)
 - [build a Web app](http://blog.kewah.com/2014/build-a-web-app-with-component/) with component
+- [Introduction to Component](http://smalljs.org/package-managers/component-part-1/)
+- [Component Part 2: Making Your Own](http://smalljs.org/package-managers/component-part-2/)
 
 ## Official Links
 
