@@ -39,10 +39,12 @@ Note that these are only the official libraries.
 - [builder-jade](https://github.com/component/builder-jade)
 - [builder-regenerator](https://github.com/component/builder-regenerator)
 
-### Middleware:
+### Middleware and Servers:
 
-- [component-koa](https://github.com/component/koa.js) - middleware for [koa](https://github.com/koajs/koa)
+- [component-koa](https://github.com/component/koa.js) - middleware for [koa](https://github.com/koajs/koa).
 - [component-middleware](https://github.com/component/middleware.js) - middleware for node, connect, express, etc.
+- [component-builder-www](https://github.com/component/builder.www) - experimental build server for a potential Component CDN.
+- [component-cdn](https://github.com/component/cdn) - experimental CDN for Component.
 
 ### Documentation:
 
