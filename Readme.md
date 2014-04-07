@@ -62,5 +62,6 @@ Guide to Creating Apps with Components:
 - [Component(1)](https://github.com/component/component)
 - [Guide](https://github.com/component/guide)
 - [Specifications](https://github.com/component/spec)
+- [Component.IO](https://github.com/component/component.io)
 
 [component]: https://github.com/component/component
