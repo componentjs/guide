@@ -22,3 +22,14 @@ This allows people to use `require(<user>-<repo>)` in either Component, Browseri
 
 Some file systems are case sensitive, others are not.
 Let's keep components as compatible as possible!
+
+
+## Assume that ES5 is supported
+
+Use `Object.keys` and `Function.bind` and `Array.map` etc. Do not add fixes or take patches for IE8
+compatibility, if the problems in question can be resolved by conditionally including your favorite [ES5 shim].
+
+ES5 shim is available as component, but it's probably even better to use infamous IE <= 8 conditional comments to include it.
+
+
+[ES5 shim]: https://github.com/es-shims/es5-shim
