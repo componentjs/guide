@@ -23,6 +23,10 @@ This allows people to use `require(<user>-<repo>)` in either Component, Browseri
 Some file systems are case sensitive, others are not.
 Let's keep components as compatible as possible!
 
+## Don't use vendor prefixes in component CSS
+
+It's hard to correctly add all the required vendor prefixes, and it makes CSS difficult to read and maintain.
+Component build includes [autoprefixer] which handles vendor prefixes automatically. Applications can use other solutions to post-process CSS.
 
 ## Assume that ES5 is supported
 
@@ -32,4 +36,5 @@ compatibility, if the problems in question can be resolved by conditionally incl
 ES5 shim is available as component, but it's probably even better to use infamous IE <= 8 conditional comments to include it.
 
 
+[autoprefixer]: https://github.com/ai/autoprefixer
 [ES5 shim]: https://github.com/es-shims/es5-shim
