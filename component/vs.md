@@ -11,7 +11,7 @@ However, we may still use `component.json` as it allows package managers to accu
 
 ## When is Component right for me?
 
-Component's philosophy is the UNIX philosophy of the web - to create a platform for small, reusable components that consist of JS, CSS, HTML, images, fonts, etc. With it's well-defined specs, using Component means not worrying about most frontend problems such as package management, publishing components to a registry, or creating a custom build process for every single app.
+Component's philosophy is the UNIX philosophy of the web - to create a platform for small, reusable components that consist of JS, CSS, HTML, images, fonts, etc. With its well-defined specs, using Component means not worrying about most frontend problems such as package management, publishing components to a registry, or creating a custom build process for every single app.
 
 ## When is Component wrong for me?
 
@@ -19,19 +19,19 @@ One of the main philosophies with Component is that each component should genera
 
 Thus, Component may not be suitable if you use a lot of globals, like jQuery, or use frameworks whose plugins could break other plugins, such as Angular JS.
 
-Since Component is also a package manager, it is not suitable for many frameworks who have their own package management solution, such as Meteor.
+Since Component is also a package manager, it is not suitable for many frameworks who have their own package management solution, such as [Meteor](http://meteor.com).
 
 Component, by default, only supports CSS and JS, so using CSS preprocessors whose language is not a superset of CSS may cause issues.
 
 ## Component vs. npm
 
-Component uses GitHub as a registry and does not have its own. This is in contrast to `npm`, who has its own user namespace and publishing step.
+Component uses GitHub as a registry and does not have its own. This is in contrast to `npm`, which has its own user namespace and publishing step.
 
 Some benefits include:
 
 - Knowing exactly where code you use is since we use github's `<user>/<repo>` namespace
 - No downtime, as GitHub's CDN is generally more reliable than `npm`
-- No publishing step except for pushing takes to your repository
+- No publishing step except for pushing tags to your repository
 - No different username than GitHub usernames
 - Flat dependencies, which is more suitable for the browser
 - Allow multiple versions of the same dependencies
