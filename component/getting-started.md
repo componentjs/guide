@@ -9,8 +9,10 @@ visit [node's download page](http://nodejs.org/download/).
 Once installed, install Component from npm by running the following command:
 
 ```bash
-$ npm install -g component
+$ npm install -g component@1.0.0-rc5
 ```
+
+If you need features like semver support which only exists in component 1.0, you need to specify the version, this is _temporary woraround_ as component 1.0 is under beta version. 
 
 ## Using Component
 
