@@ -3,6 +3,7 @@ Boilerplates:
 
 - [component-boilerplate-express](https://github.com/component/boilerplate-express)
 - [component-boilerplate-koa](https://github.com/component/boilerplate-koa)
+- [component-koa-et-al-boilerplate](https://github.com/sunewt/component-koa-et-al-boilerplate)
 
 Examples:
 
