@@ -31,7 +31,7 @@ machine api.github.com
   password x-oauth-basic
 ```
 
-`<token>` is generated in the page <https://github.com/settings/applications#personal-access-tokens>, you can valid it via command:
+`<token>` is generated in the page <https://github.com/settings/applications#personal-access-tokens>, you can validate it via command:
 
 ```bash
 curl -u <token>:x-oauth-basic https://api.github.com/user
