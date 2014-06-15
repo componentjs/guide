@@ -16,7 +16,7 @@ If you need features like semver support which only exists in component 1.0, you
 
 ## Config github access
 
-Component using github API to access github repos, one simple way of configure your account is by adding global environment to your profile (eg: `.bashrc` or `.zshrc`) like this:
+Component 1.0.0 is using github API to access github repos, one simple way of configure your account is by adding global environment to your profile (eg: `.bashrc` or `.zshrc`) like this:
 
 ```bash
 export GITHUB_USERNAME="<username>"
