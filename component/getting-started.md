@@ -14,6 +14,29 @@ $ npm install -g component@1.0.0-rc5
 
 If you need features like semver support which only exists in component 1.0, you need to specify the version, this is _temporary woraround_ as component 1.0 is under beta version. 
 
+## Config github access
+
+Component using github API to access github repos, one simple way of configure your account is by adding global environment to your profile (eg: `.bashrc` or `.zshrc`) like this:
+
+```bash
+export GITHUB_USERNAME="<username>"
+export GITHUB_PASSWORD="<password>"
+```
+
+One other secure way is by using github oauth token, add the following lines to your `.netrc`
+
+```bash
+machine api.github.com
+  login <token>
+  password x-oauth-basic
+```
+
+`<token>` is generated in the page <https://github.com/settings/applications#personal-access-tokens>, you can valid it via command:
+
+```bash
+curl -u <token>:x-oauth-basic https://api.github.com/user
+```
+
 ## Using Component
 
 The following is a quick introduction to Component through building a simple
