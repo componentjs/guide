@@ -19,6 +19,10 @@ You can always view the boring [history.md](https://github.com/component/compone
 - join `#components` on freenode
 - follow [@component_js](http://twitter.com/component_js) on twitter
 
+## Builder Plugins
+
+- https://github.com/mnmly/builder-myth
+
 ## Table of Contents
 
 `component(1)`:
