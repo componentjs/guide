@@ -44,10 +44,6 @@ This will link a component on your hard drive to the current `components/` folde
 
 Show the dependency tree of the current component.
 
-## open
-
-Open specific pages in the browser. View `component open -h` for all the options.
-
 ## outdated
 
 Checks for any outdated __pinned__ dependencies. This is more suited for apps.
