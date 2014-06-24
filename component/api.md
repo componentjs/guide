@@ -7,6 +7,8 @@ Builds your component into `.js` and `.css` bundles and installs any necessary d
 
 You __should__ use the `--watch` option, especially when building components, as it will make subsequent builds very fast as file transformations are cached in memory. When using `--watch`, you can type `r`, `s`, and `c` to `build`, `build scripts`, and `build styles`, respectively.
 
+Livereload users, you could use the `--reload` option, this is simply `--watch` with a livereload server. Don't forget to enable your favorite [livereload browser extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-) or just include the [livereload client script](http://feedback.livereload.com/knowledgebase/articles/86180-how-do-i-add-the-script-tag-manually).
+
 An alternative to the `--watch` option is using [middleware](repositories.md#middleware), more suited for apps.
 
 The `--dev` option does the following:
