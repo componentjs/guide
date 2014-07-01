@@ -14,7 +14,7 @@ $ npm install -g component@1.0.0-rc5
 
 If you need features like semver support which only exists in component 1.0, you need to specify the version, this is _temporary woraround_ as component 1.0 is under beta version. 
 
-## Config github access
+## Configuring github access
 
 Component 1.0.0 is using github API to access github repos, one simple way of configure your account is by adding global environment to your profile (eg: `.bashrc` or `.zshrc`) like this:
 
@@ -23,7 +23,7 @@ export GITHUB_USERNAME="<username>"
 export GITHUB_PASSWORD="<password>"
 ```
 
-One other secure way is by using github oauth token, add the following lines to your `.netrc`
+One other secure way is by using github oauth token, add the following lines to your [`.netrc`](http://www.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-File.html)
 
 ```bash
 machine api.github.com
@@ -36,6 +36,25 @@ machine api.github.com
 ```bash
 curl -u <token>:x-oauth-basic https://api.github.com/user
 ```
+
+## Configuring bitbucket access
+
+Component 1.0.0+ supports Bitbucket as a remote as well. The simplest way to support bitbucket is to add globals to your profile (eg. `.bashrc` or `.zshrc`) like so:
+
+```bash
+export BITBUCKET_USERNAME="<username>"
+export BITBUCKET_PASSWORD="<password>"
+```
+
+Additionally, you can add bitbucket credentials directly to your [`.netrc`](http://www.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-File.html) file like so:
+
+```bash
+machine api.bitbucket.org
+  login <username>
+  password <password>
+```
+
+Currently, bitbucket does not support generating a personal OAuth access token. The [current documentation on OAuth with BitBucket](https://confluence.atlassian.com/display/BITBUCKET/OAuth+on+Bitbucket) only works with app authorization.
 
 ## Using Component
 
