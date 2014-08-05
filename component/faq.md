@@ -7,7 +7,7 @@
 
 ## What is a component?
 
-  As mentioned in my original [blog post](http://tjholowaychuk.com/post/27984551477/components) components are packages containing any combination of assets. For example a component may be javascript and css, fonts and images, only css, or only javascript. Components may also have server portions as well, however for (most) public components this is not recommended, as server components written in different languages are obviously difficult to share among communities. Components are _not_ related to node in any way, however the implementation of the `component(1)` executable that I have created was written with node.
+  As mentioned in my original [blog post](http://tjholowaychuk.tumblr.com/post/27984551477/components) components are packages containing any combination of assets. For example a component may be javascript and css, fonts and images, only css, or only javascript. Components may also have server portions as well, however for (most) public components this is not recommended, as server components written in different languages are obviously difficult to share among communities. Components are _not_ related to node in any way, however the implementation of the `component(1)` executable that I have created was written with node.
 
 ## Why component.json and why not use npm?
 
