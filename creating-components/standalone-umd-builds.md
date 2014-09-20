@@ -10,4 +10,11 @@ Services may automatically build UMD-wrapped standalone builds of components. Ho
 }
 ```
 
-Note that this `.standalone` name is not in the `component.json` specification and is only relevant to automated builds. It does nothing when you locally build your components.
+Note that this `.standalone` property is not in the `component.json` specification and is only relevant to automated builds. It does nothing with your local components.
+
+
+Evaluation priority: 
+
+1. CLI parameter passed after `--standalone` or `--umd`
+2. `.standalone` property in the root component
+3. `.name` property in the root component
