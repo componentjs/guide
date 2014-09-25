@@ -32,6 +32,7 @@ You can always view the boring [history.md](https://github.com/component/compone
 - [FAQ](component/faq.md)
 - [Examples](component/examples.md)
 - [Repositories](component/repositories.md) - all the official repositories used to create `component(1)`
+- [Search Tool](http://component.xmojmr.cz)
 - [Troubleshooting](component/troubleshooting.md)
 
 Guide to Creating Components:
