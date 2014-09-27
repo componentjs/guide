@@ -20,6 +20,33 @@ Note that these are only the official libraries.
 - [component-validator](https://github.com/component/validator.js)
 - [component-watcher](https://github.com/component/watcher.js)
 
+### component dependencies
+
+```
+component@1.0.0-rc5 
+├─┬ component-build@1.2.0
+│ ├── builder-autoprefixer@1.0.2
+│ └─┬ component-builder@1.1.12
+│   ├── component-manifest@1.0.0
+│   └── component-require2@1.0.1
+├── component-consoler@1.1.2
+├── component-flatten@1.0.1
+├── component-ls@2.1.0
+├── component-outdated2@1.0.3
+├── component-pin@1.0.2
+├─┬ component-resolver@1.2.1
+│ ├── component-consoler@2.0.0
+│ ├── component-downloader@1.1.4
+│ └── component-validator@1.1.1
+├── component-search2@1.1.0
+├── component-updater@1.0.2
+├── component-watcher@1.0.1
+└─┬ remotes@1.1.5
+  └─┬ component-validator@1.1.1
+    └── component-consoler@2.0.0
+```
+
+
 ### Other JS libraries:
 
 - [component-bundler](https://github.com/component/bundler.js)
