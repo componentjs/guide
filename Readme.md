@@ -1,7 +1,7 @@
 
 # Component Guide
 
-A public wiki guide for [componentjs][component].
+A public wiki guide for [component][component].
 Have questions about component? Open up an issue.
 Created a screencast or blog post about component? Link it here.
 Feel free to open a PRs with edits! Please be concise!
