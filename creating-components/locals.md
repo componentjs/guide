@@ -18,7 +18,7 @@ Local components don't need a `.name` field, they just use its folder name. You 
 "locals": ["foo/bar", "/qux/bar"]
 ```
 
-Another way to structure your component is to use multiple `.paths` values in your root component. See [Components structure](best-practices.md#Components structure).
+Another way to structure your component is to use multiple `.paths` values in your root component. See [Components Structure](../creating-apps-with-components/best-practices.md#Components structure).
 
 # Require Locals
 

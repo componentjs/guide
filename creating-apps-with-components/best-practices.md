@@ -14,7 +14,7 @@ model/
   page/component.json
 ```
 
-From `view/user`, you should NOT do `require('user')`. You should prefix every component in `model/` with `model-` and do `require('model-user')` or use [nested locals](locals.md#Nested structure).
+From `view/user`, you should NOT do `require('user')`. You should prefix every component in `model/` with `model-` and do `require('model-user')` or use [Nested Structure](../creating-components/locals.md#Nested Structure).
 
 # Pin dependencies
 
