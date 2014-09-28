@@ -73,16 +73,8 @@ other communities could write similar tool-chains in their own native language. 
 
 
 ## How do I use private Github repositories?
-
-  Adding a `remote` of `raw.github.com` with basic auth credentials will allow you to utilize private components like so:
-
-```json
-{
-  "remotes" : [
-    "https://user:pass@raw.github.com"
-  ]
-}
-```
+  
+  You just need to use authentication via environmental variables or __.netrc__ file.
 
   Alternatively you may serve private components without Github using any web server that uses the same urls as Github. See Julian Gruber's [contre](https://github.com/godmodelabs/contre) as one example of this with git integration, or the [component/server](https://github.com/component/server) example which serves from components disk.
 

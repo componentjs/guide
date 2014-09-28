@@ -5,7 +5,7 @@ Note that these are only the official libraries.
 
 ### The major libraries you may be interested in are:
 
-- [remotes](https://github.com/component/remotes.js) - unify remote endpoint APIs
+- [component-remotes](https://github.com/component/remotes.js) - unify remote endpoint APIs
 - [component-resolver](https://github.com/component/resolver.js) - resolve the dependency tree with optional installing
 - [component-builder](https://github.com/component/builder2.js) - the build system
 
@@ -23,27 +23,27 @@ Note that these are only the official libraries.
 ### component dependencies
 
 ```
-component@1.0.0-rc5 
-├─┬ component-build@1.2.0
-│ ├── builder-autoprefixer@1.0.2
-│ └─┬ component-builder@1.1.12
-│   ├── component-manifest@1.0.0
-│   └── component-require2@1.0.1
-├── component-consoler@1.1.2
-├── component-flatten@1.0.1
-├── component-ls@2.1.0
-├── component-outdated2@1.0.3
-├── component-pin@1.0.2
-├─┬ component-resolver@1.2.1
-│ ├── component-consoler@2.0.0
-│ ├── component-downloader@1.1.4
-│ └── component-validator@1.1.1
-├── component-search2@1.1.0
-├── component-updater@1.0.2
-├── component-watcher@1.0.1
-└─┬ remotes@1.1.5
-  └─┬ component-validator@1.1.1
-    └── component-consoler@2.0.0
+component
+├─┬ component-build
+│ ├── builder-autoprefixer
+│ └─┬ component-builder
+│   ├── component-manifest
+│   └── component-require2
+├── component-consoler
+├── component-flatten
+├── component-ls
+├── component-outdated2
+├── component-pin
+├─┬ component-resolver
+│ ├── component-consoler
+│ ├── component-downloader
+│ └── component-validator
+├── component-search2
+├── component-updater
+├── component-watcher
+└─┬ component-remotes
+  └─┬ component-validator
+    └── component-consoler
 ```
 
 
@@ -65,6 +65,7 @@ component@1.0.0-rc5
 - [builder-html-minifier](https://github.com/component/builder-html-minifier)
 - [builder-jade](https://github.com/component/builder-jade)
 - [builder-regenerator](https://github.com/component/builder-regenerator)
+- [builder-myth](https://github.com/mnmly/builder-myth)
 
 ### Middleware, Servers, and Sites:
 
@@ -72,7 +73,7 @@ component@1.0.0-rc5
 - [component-middleware](https://github.com/component/middleware.js) - middleware for node, connect, express, etc.
 - [component-builder-www](https://github.com/component/builder.www) - experimental build server for a potential Component CDN.
 - [component-cdn](https://github.com/component/cdn) - experimental CDN for Component.
-- [component.io](https://github.com/component/component.io) - http://component.io
+- [component.github.io](https://github.com/component/component.github.io) - http://component.io
 
 ### Documentation:
 

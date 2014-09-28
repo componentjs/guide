@@ -1,16 +1,16 @@
 
 # Component Guide
 
-A public wiki guide for [component][component].
-Have questions about [component][component]? Open up an issue.
-Created a screencast or blog post about [component][component]? Link it here.
+A public wiki guide for [componentjs][component].
+Have questions about component? Open up an issue.
+Created a screencast or blog post about component? Link it here.
 Feel free to open a PRs with edits! Please be concise!
 
 ## Changelogs
 
 - [v1.0.0](changelogs/1.0.0.md)
 
-You can always view the boring [history.md](https://github.com/component/component/blob/master/History.md).
+You can always view the boring [history.md](https://github.com/componentjs/component/blob/master/History.md).
 
 ## Community
 
@@ -19,23 +19,22 @@ You can always view the boring [history.md](https://github.com/component/compone
 - join `#components` on freenode
 - follow [@component_js](http://twitter.com/component_js) on twitter
 
-## Builder Plugins
-
-- https://github.com/mnmly/builder-myth
 
 ## Table of Contents
 
 `component(1)`:
 
 - [Getting Started](component/getting-started.md)
+- [Examples](component/examples.md)
 - [Component vs.](component/vs.md) - Component use-cases and comparison with other frontend solutions
 - [FAQ](component/faq.md)
-- [Examples](component/examples.md)
-- [Repositories](component/repositories.md) - all the official repositories used to create `component(1)`
+- [Repositories](component/repositories.md) - internal components of `component(1)` and different plugins 
 - [Troubleshooting](component/troubleshooting.md)
 
 Guide to Creating Components:
 
+- [Local Components](creating-components/locals.md)
+- [Debugging Components](creating-components/debugging.md)
 - [Publishing Components](creating-components/publishing.md)
 - [Standalone UMD Builds](creating-components/standalone-umd-builds.md)
 - [Best Practices](creating-components/best-practices.md)
@@ -45,6 +44,7 @@ Guide to Creating Apps with Components:
 - [Entry Points](creating-apps-with-components/entry-points.md)
 - [CSS Ordering](creating-apps-with-components/css-ordering.md)
 - [Best Practices](creating-apps-with-components/best-practices.md)
+
 
 ## Screencasts
 
@@ -63,9 +63,9 @@ Guide to Creating Apps with Components:
 
 ## Official Links
 
-- [Component(1)](https://github.com/component/component)
-- [Guide](https://github.com/component/guide)
-- [Specifications](https://github.com/component/spec)
-- [Component.IO](https://github.com/component/component.io)
+- [Component(1)](https://github.com/componentjs/component)
+- [Guide](https://github.com/componentjs/guide)
+- [Specifications](https://github.com/componentjs/spec)
+- [Component.IO](https://github.com/componentjs/component.io)
 
-[component]: https://github.com/component/component
+[component]: https://github.com/componentjs/component

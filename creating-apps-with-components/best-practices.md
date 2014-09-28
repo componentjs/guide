@@ -1,5 +1,5 @@
 
-# Try to avoid more than one path
+# Components structure
 
 Try to keep all your components in a single path unless the number of components you use in that single path is unmanageable.
 
@@ -14,7 +14,7 @@ model/
   page/component.json
 ```
 
-From `view/user`, you should NOT do `require('user')`. You should either do `require('model').user`, `require('model/user')`, or prefix every component in `model/` with `model-` and do `require('model-user')`.
+From `view/user`, you should NOT do `require('user')`. You should prefix every component in `model/` with `model-` and do `require('model-user')` or use [nested locals](locals.md#Nested structure).
 
 # Pin dependencies
 
