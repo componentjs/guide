@@ -40,7 +40,7 @@ Then create this file __index.html__ in our project root:
 ```
 
 You'll notice that we've linked to __build/build.css__ and __build/build.js__
-files. This is where Component will build files toin the default case.
+files. This is where Component will build files to in the default case.
 
 ### Create component.json
 
@@ -57,9 +57,8 @@ Let's create the __component.json__ and set the _name_ property.
 We want to include
 [normalize.css](https://github.com/necolas/normalize.css), so let's install 
 this remote dependency via the command: 
-`component install necolas/normalize.css`. If check the __component.json__ 
-file, you'll notice that component add the dependency automatically. You can 
-do it also the other way: add a dependency, then run `component install`.
+`component install necolas/normalize.css`. If you check the __component.json__ 
+file, you'll notice that component add the dependency automatically. You can also do it the other way: add a dependency, then run `component install`.
 
 You should see this output on your stdout:
 ```bash
@@ -136,7 +135,7 @@ __index.html__.
 ### Open index.html
 
 Run `open index.html` to open the the file in your browser. Now you'll notice 
-that `Woo!` is flashing: thesite is built.
+that `Woo!` is flashing: the site is built.
 
 ## Some observations
 
@@ -158,7 +157,7 @@ flashing immediately when you open the browser.
 and `-moz`. Component uses the great [autoprefixer](https://github.com/postcss/autoprefixer) by default to generate vendor prefixes.
 
 ## Setup Authentication
-You might noticed that Component prints a message if you using 
+You might noticed that Component prints a message if you run 
 `component install`. It looks like this:
 ```bash
 github remote: 54 of 60 requests remaining, resetting at Thu Oct 30 2014 00:23:36 GMT+0100 (CET)
@@ -169,14 +168,14 @@ you need more, you need to use authentication. See [changelog](https://github.co
 
 ### Configuring GitHub access
 
-Component 1.0.0 is using github API to access github repos, one simple way of onfigure your account is by adding global environment to your profile (eg: `.bashrc` r `.zshrc`) like this:
+Component 1.0.0 is using GitHub API to access GitHub repos, one simple way to configure your account is by adding global environment variable to your profile (eg: `.bashrc` r `.zshrc`) like this:
 
 ```bash
 export GITHUB_USERNAME="<username>"
 export GITHUB_PASSWORD="<password>"
 ```
 
-One other secure way is by using github oauth token, add the following lines to your `.netrc`](http://www.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-File.tml)
+One other secure way is by using GitHub oauth token, add the following lines to your `.netrc`](http://www.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-File.tml)
 
 ```bash
 machine api.github.com
@@ -189,14 +188,14 @@ machine api.github.com
 
 ### Configuring bitbucket access
 
-Component 1.0.0+ supports Bitbucket as a remote as well. The simplest way to support itbucket is to add globals to your profile (eg. `.bashrc` or `.zshrc`) like so:
+Component 1.0.0+ supports Bitbucket as a remote as well. The simplest way to support Bitbucket is to add globals to your profile (eg. `.bashrc` or `.zshrc`) like so:
 
 ```bash
 export BITBUCKET_USERNAME="<username>"
 export BITBUCKET_PASSWORD="<password>"
 ```
 
-Additionally, you can add bitbucket credentials directly to your [`.netrc`](http://ww.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-File.html) file like o:
+Additionally, you can add Bitbucket credentials directly to your [`.netrc`](http://ww.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-File.html) file like o:
 
 ```bash
 machine api.bitbucket.org
@@ -204,7 +203,7 @@ machine api.bitbucket.org
   password <password>
 ```
 
-Currently, bitbucket does not support generating a personal OAuth access token. The [urrent documentation on OAuth with BitBucket](https://confluence.atlassian.com/isplay/BITBUCKET/OAuth+on+Bitbucket) only works with app authorization.
+Currently, Bitbucket does not support generating a personal OAuth access token. The [current documentation on OAuth with BitBucket](https://confluence.atlassian.com/isplay/BITBUCKET/OAuth+on+Bitbucket) only works with app authorization.
 
 ## Next steps
 
