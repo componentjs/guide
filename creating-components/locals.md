@@ -23,7 +23,7 @@ Another way to structure your component is to use multiple `.paths` values in yo
 # Require Locals
 
 Local components can be required with its name like `require('qux')`.
-Tne result is the exported module of the main file, which you define in your component.json as `.main`.
+The result is the exported module of the main file, which you define in your component.json as `.main`.
 
 You can also require the other scripts of a foreign component just by writing: `require('qux/script')`. See also [Aliases](debugging.md#Aliases).
 
