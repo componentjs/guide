@@ -171,14 +171,25 @@ you need more, you need to use authentication. See [changelog](https://github.co
 Component 1.0.0 is using GitHub API to access GitHub repos, one simple way to configure your account is by adding global environment variable to your profile (eg: `.bashrc` r `.zshrc`) like this:
 
 ```bash
-export GITHUB_USERNAME="<username>"
-export GITHUB_PASSWORD="<password>"
+export GITHUB_USERNAME=<username>
+export GITHUB_PASSWORD=<password>
 ```
 
-One other secure way is by using GitHub oauth token, add the following lines to your `.netrc`](http://www.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-File.tml)
+One other secure way is by using GitHub oauth token instead of your password:
+
+```bash
+export GITHUB_USERNAME=<token>
+export GITHUB_PASSWORD=x-oauth-basic
+```
+
+You can also use a __.netrc__ file, add the following lines to your `.netrc`](http://www.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-File.tml)
 
 ```bash
 machine api.github.com
+  login <token>
+  password x-oauth-basic
+  
+machine raw.githubusercontent.com
   login <token>
   password x-oauth-basic
 ```
@@ -191,8 +202,8 @@ machine api.github.com
 Component 1.0.0+ supports Bitbucket as a remote as well. The simplest way to support Bitbucket is to add globals to your profile (eg. `.bashrc` or `.zshrc`) like so:
 
 ```bash
-export BITBUCKET_USERNAME="<username>"
-export BITBUCKET_PASSWORD="<password>"
+export BITBUCKET_USERNAME=<username>
+export BITBUCKET_PASSWORD=<password>
 ```
 
 Additionally, you can add Bitbucket credentials directly to your [`.netrc`](http://ww.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-File.html) file like o:
