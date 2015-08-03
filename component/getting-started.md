@@ -182,7 +182,7 @@ export GITHUB_USERNAME=<token>
 export GITHUB_PASSWORD=x-oauth-basic
 ```
 
-You can also use a __.netrc__ file, add the following lines to your `.netrc`](http://www.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-File.tml)
+You can also use a __.netrc__ file, add the following lines to your `.netrc`](https://www.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-file.html)
 
 ```bash
 machine api.github.com
@@ -206,7 +206,7 @@ export BITBUCKET_USERNAME=<username>
 export BITBUCKET_PASSWORD=<password>
 ```
 
-Additionally, you can add Bitbucket credentials directly to your [`.netrc`](http://ww.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-File.html) file like o:
+Additionally, you can add Bitbucket credentials directly to your [`.netrc`](https://www.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-file.html) file like o:
 
 ```bash
 machine api.bitbucket.org
