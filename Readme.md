@@ -1,3 +1,5 @@
+# NOTE
+Component is __deprecated__, see [componentjs/component](https://github.com/componentjs/component/blob/master/Readme.md)
 
 # Component Guide
 
